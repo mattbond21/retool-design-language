@@ -1,0 +1,66 @@
+---
+layout: default
+section: Components
+title: Toasts
+previous: Tabs
+previous-path: components/tabs
+next: Tooltips
+next-path: components/tooltips
+---
+
+<h2>{{ page.title }}</h2>
+<span class="heading-border"></span>
+
+<p>Toasts provide brief information to users of a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen, and only one toast may be displayed at a time. They shouldn&rsquo;t interrupt their experience, and they don&rsquo;t require user input to disappear. Toasts can contain a single action and an optional dismiss or cancel action.</p>
+
+<h4>Example</h4>
+<ol class="call-outs">
+  <li><strong>Short label:</strong> A short single sentence of information.</li>
+  <li><strong>One action:</strong> An action that can undo the previous operation, or similar.</li>
+  <li><strong>Long label:</strong> Information that requires two lines of text to communicate.</li>
+  <li><strong>Two ations:</strong> If appropriate, have a positive action and an optional dismiss or cancel action.</li>
+</ol>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/toasts/img-toasts-example-1.png" class="example-image" alt="Toasts anatomy example">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/toasts/img-toasts-example-2.png" class="example-image" alt="Toasts anatomy example">
+  </div>
+</div>
+
+<h3>Behavior</h3>
+<p>Toasts should appear in the bottom left corner of the screen. Since they are temporary messages, it is acceptable if the toast covers important content.</p>
+
+<p>Toasts should animate into position from the bottom of the screen. The movement will guide users to notice the toast, acknowledge it, and take action if necessary.</p>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Web</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>iOS</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Android</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+{% include pagination-links.html %}

@@ -1,0 +1,109 @@
+---
+layout: default
+section: Components
+title: Modal dialogs
+previous: Menus
+previous-path: components/menus
+next: Radio buttons
+next-path: components/radio-buttons
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>A modal dialog is used to direct a user&rsquo;s attention to a specific action, information, or a set of actions. It typically lies above a page&rsquo;s content and has a background opacity to focus the user&rsquo;s attention on the modal.</p>
+
+<p>The content dictates the height of the modal and can expand to accommodate more content. The modal should be anchored 80px from the top and increase in height until it is 80px from the bottom of the screen. If the content extends beyond this max-height, the modal body becomes scrollable.</p>
+
+<p>The width of the dialog is available in four sizes:</p>
+<ul>
+  <li><strong>Small:</strong> 480px</li>
+  <li><strong>Medium:</strong> 640px</li>
+  <li><strong>Large:</strong> 800px</li>
+  <li><strong>X-large:</strong> 960px</li>
+</ul>
+
+<h3>Types and anatomy</h3>
+
+<h4>Basic modal</h4>
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/modal-dialogs/img-modal-dialog-example-1.png" class="example-image" alt="Modal dialog anatomy example">
+  </div>
+</div>
+<ol class="call-outs">
+  <li><strong>Header:</strong> This should include a title that describes what triggered the modal or what the context of the modal is. If one of the actions in the modal footer is a &ldquo;Cancel&rdquo; action, you do not need to have the close icon in the header for redundancy.</li>
+  <li><strong>Body:</strong> The body of the modal will be dependent on the context with which it was triggered. This is a space to customize your content within the constraints of the different modal types listed below.</li>
+  <li><strong>Actions:</strong> Contains a maximum of two right aligned buttons. The main action should be a primary button to confirm the state of the dialog. The secondary button is used to cancel the current dialog state and dismiss the modal.</li>
+</ol>
+
+<h4>Creation modal</h4>
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/modal-dialogs/img-modal-dialog-example-2.png" class="example-image" alt="Modal dialog anatomy example">
+  </div>
+</div>
+<ol class="call-outs">
+  <li><strong>Header:</strong> This should include a title that describes what triggered the modal or what the context of the modal is. If one of the actions in the modal footer is a &ldquo;Cancel&rdquo; action, you do not need to have the close icon in the header for redundancy.</li>
+  <li><strong>Input field:</strong> The active state of an input field where the input label and user generated information are both visible.</li>
+  <li><strong>Text area:</strong> The empty and inactive state of a text area showing the label.</li>
+  <li><strong>Actions:</strong> Contains a maximum of two right aligned buttons. The main action should be a primary button to confirm the state of the dialog. The secondary button is used to cancel the current dialog state and dismiss the modal.</li>
+</ol>
+
+<h4>Selection modal</h4>
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/modal-dialogs/img-modal-dialog-example-3.png" class="example-image" alt="Modal dialog anatomy example">
+  </div>
+</div>
+<ol class="call-outs">
+  <li><strong>Header:</strong> This should include a title that describes what triggered the modal or what the context of the modal is. If one of the actions in the modal footer is a &ldquo;Cancel&rdquo; action, you do not need to have the close icon in the header for redundancy.</li>
+  <li><strong>Tabs:</strong> If appropriate, tabs can be used within a modal to separate content into logical sections. If tabs are used, the height of the modal should not adjust when switching between tabs.</li>
+  <li><strong>Row item:</strong> State when an item is not selected in the table.</li>
+  <li><strong>Row selection:</strong> State when an item is selected in the table.</li>
+  <li><strong>Actions:</strong> Contains a maximum of two right aligned buttons. The main action should be a primary button to confirm the state of the dialog. The secondary button is used to cancel the current dialog state and dismiss the modal.</li>
+</ol>
+
+<h4>Benefits modal</h4>
+<p>Use to introduce existing users to a new experience. The modal is an entry point that focuses all of the user&rsquo;s attention on a large or impactful update.</p>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/modal-dialogs/img-modal-dialog-example-4.png" class="example-image" alt="Modal dialog anatomy example">
+  </div>
+</div>
+<ol class="call-outs">
+  <li><strong>Illustration:</strong> Should be composed of metaphorical imagery that relates to the content or benefit (see best practices below).</li>
+  <li><strong>Title:</strong> The title should provide a concise overview of the feature benefit.</li>
+  <li><strong>Message:</strong> Supporting information about the feature.</li>
+  <li><strong>Actions:</strong> Contains a maximum of two centered buttons. The main action should be a primary button that uses self-describing action verbs like &lsquo;Get started&rsquo;. If the secondary button is simply a &lsquo;Dismiss&rsquo; action, remove it in favor or focusing on the positive primary button.</li>
+  <li><strong>Close:</strong> Due to the nature of the actions in a benefits modal, we prefer to use the close icon pattern her to dismiss the modal.</li>
+</ol>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Web</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>iOS</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Android</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+{% include pagination-links.html %}

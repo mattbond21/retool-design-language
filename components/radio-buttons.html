@@ -1,0 +1,59 @@
+---
+layout: default
+section: Components
+title: Radio buttons
+previous: Modal dialogs
+previous-path: components/modal-dialogs
+next: Tabs
+next-path: components/tabs
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>Radio buttons allow users to select a mutually exclusive option from a given set. Radio buttons should be used when the user needs to see all available options, up to a maximum of five options. If there are more than five options in the list, you should use a dropdown menu instead.</p>
+
+<h3>Example</h3>
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/radio-buttons/img-radio-buttons-example-1.png" class="example-image-border" alt="Radio buttons anatomy example">
+  </div>
+</div>
+<ol class="call-outs">
+  <li><strong>Radio group label:</strong> Conveys the purpose of a group of radio buttons.</li>
+  <li><strong>Unselected:</strong> An inactive option in a list.</li>
+  <li><strong>Selected:</strong> The active option in the list.</li>
+</ol>
+
+<h3>Usage and behavior</h3>
+<p>Radio buttons should always be stacked vertically for easy scanning. The list options should be shown in a logical order. For example, the most likely to be selected options at the top, and least likely to be selected options at the bottom.</p>
+
+<p>Make one radio button option the default. Select the safest, most secure, and private options first. If safety and security aren’t factors, select the most likely or convenient option</p>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Web</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>iOS</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Android</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+{% include pagination-links.html %}

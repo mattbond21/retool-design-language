@@ -1,0 +1,66 @@
+---
+layout: default
+section: Components
+title: Depth
+previous: Checkboxes
+previous-path: components/checkboxes
+next: Input fields
+next-path: components/input-fields
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>Depth is a device that we use in our apps to create hierarchy a sense of layering in the UI. By showing depth we allow surfaces to move in front of and behind other surfaces. This creates spatial relationships between elements for emphasis and focus. Depth can be depicted using shadows or other visual cues, such as surface fills or opacities.</p>
+
+<h3>Types and usage</h3>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/depth/img-depth-example-1.png" class="example-image" alt="Depth examples">
+  </div>
+</div>
+
+<ol class="call-outs">
+  <li><strong>X-Small:</strong> Used on button hover states, or very small interactive elements to create separation from the content behind.</li>
+  <li><strong>Small:</strong> Used on set, folder, and class cards. Should be used as the default shadow for most elements.</li>
+  <li><strong>Medium:</strong> Used on menus, and navigation menu overlays like fly out menus and the sidebar.</li>
+  <li><strong>Large:</strong> Used on surfaces such as modal dialog backgrounds, set preview cards, and study mode backgrounds.</li>
+</ol>
+
+<h3>Behavior</h3>
+
+<ul>
+  <li>With an interactive element like a card, we can transition between the card resting depth (small) and a hover depth (medium) to highlight the action.</li>
+  <li>When transitioning between depths, the element should look like it is being elevated higher when interacted with.</li>
+  <li>You should not have a white surface on a white background without a bordered container. To avoid confusion of identifying the two surfaces, add a <code>var(--neutral-300)</code> border to the element to create adequate separation.</li>
+</ul>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Web</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>iOS</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Android</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+
+{% include pagination-links.html %}

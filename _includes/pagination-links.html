@@ -1,0 +1,28 @@
+<div class="row pagination-links">
+  <div class="col">
+    {% if page.previous != null %}
+    <a href="{{ site.baseurl }}{{ page.previous-path }}" class="next-previous-links">
+      <div class="previous">
+        <span class="icon-20 icon-20-chevron-left"></span>
+        Previous
+        <div class="title">
+          {{ page.previous }}
+        </div>
+      </div>
+    </a>
+    {% endif %}
+  </div>
+  <div class="col">
+    {% if page.next != null %}
+    <a href="{{ site.baseurl }}{{ page.next-path }}" class="next-previous-links">
+      <div class="next">
+        Next
+        <span class="icon-20 icon-20-chevron-right"></span>
+        <div class="title">
+          {{ page.next }}
+        </div>
+      </div>
+    </a>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,674 @@
+---
+layout: default
+section: Foundations
+title: Color
+previous: Overview
+previous-path: getting-started/overview
+next: Iconography
+next-path: foundations/iconography
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>The color palette is a foundation pillar of Retool. It gives the product an immediate sense of being familiar and warm. The color palette leverages Retool’s brand heritage, and builds on its sense of energy, intelligence, and confidence.</p>
+
+<p>Retool is committed to complying with AA standard contrast ratios for all text in our dark theme. The color combinations in this guide don’t all comply with the AA standard for light mode, but we&rsquo;re making progress towards being accessible by focusing on our dark theme.</p>
+
+<h3>Primary palette</h3>
+
+<p>Our primary palette consists of neutral grays, white, indigo, and teal. These colors are represented in the UI chrome while reserving the secondary palette when pops of energy and color are necessary.</p>
+
+<div class="row">
+  <div class="col">
+    <div class="color-swatch">
+      <div class="color-swatch-header color-swatch-indigo-400"></div>
+      <div class="color-swatch-body">
+        <h5 class="nav-section-header">Name</h5>
+        <span>Indigo 400</span>
+        <h5 class="nav-section-header">RGB</h5>
+        <span>66, 87, 178</span>
+        <h5 class="nav-section-header">HEX</h5>
+        <span>#4257b2</span>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="color-swatch">
+      <div class="color-swatch-header color-swatch-teal-400"></div>
+      <div class="color-swatch-body">
+        <h5 class="nav-section-header">Name</h5>
+        <span>Teal 400</span>
+        <h5 class="nav-section-header">RGB</h5>
+        <span>60, 207, 207</span>
+        <h5 class="nav-section-header">HEX</h5>
+        <span>#3ccfcf</span>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="color-swatch">
+      <div class="color-swatch-header color-swatch-ink-300"></div>
+      <div class="color-swatch-body">
+        <h5 class="nav-section-header">Name</h5>
+        <span>Ink 200</span>
+        <h5 class="nav-section-header">RGB</h5>
+        <span>48, 53, 69</span>
+        <h5 class="nav-section-header">HEX</h5>
+        <span>#303545</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Secondary palette</h3>
+<p>Our secondary palette is made up of coral, green, yellow, and orange. These should be used sparringly in the UI per the below usage guidelines.</p>
+
+<div class="row">
+  <div class="col">
+    <div class="color-swatch">
+      <div class="color-swatch-header color-swatch-coral-400"></div>
+      <div class="color-swatch-body">
+        <h5 class="nav-section-header">Name</h5>
+        <span>Coral 400</span>
+        <h5 class="nav-section-header">RGB</h5>
+        <span>255, 114, 91</span>
+        <h5 class="nav-section-header">HEX</h5>
+        <span>#ff725b</span>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="color-swatch">
+      <div class="color-swatch-header color-swatch-green-400"></div>
+      <div class="color-swatch-body">
+        <h5 class="nav-section-header">Name</h5>
+        <span>Green 400</span>
+        <h5 class="nav-section-header">RGB</h5>
+        <span>35, 178, 109</span>
+        <h5 class="nav-section-header">HEX</h5>
+        <span>#23b26d</span>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="color-swatch">
+      <div class="color-swatch-header color-swatch-yellow-400"></div>
+      <div class="color-swatch-body">
+        <h5 class="nav-section-header">Name</h5>
+        <span>Yellow 400</span>
+        <h5 class="nav-section-header">RGB</h5>
+        <span>255, 205, 31</span>
+        <h5 class="nav-section-header">HEX</h5>
+        <span>#ffcd1f</span>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="color-swatch">
+      <div class="color-swatch-header color-swatch-orange-400"></div>
+      <div class="color-swatch-body">
+        <h5 class="nav-section-header">Name</h5>
+        <span>Orange 400</span>
+        <h5 class="nav-section-header">RGB</h5>
+        <span>240, 135, 0</span>
+        <h5 class="nav-section-header">HEX</h5>
+        <span>#f08700</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h3>Applying color</h3>
+<p></p>
+
+<h4>Light theme example</h4>
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/color/img-color-example-1.png" class="example-image-border" alt="Example of color in light mode UI">
+  </div>
+</div>
+
+<h4>Dark theme example</h4>
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/color/img-color-example-2.png" class="example-image" alt="Example of color in dark mode UI">
+  </div>
+</div>
+
+<h4>Tips and guidelines</h4>
+<ul>
+  <li>Do not simply invert a foreground or background colors for our dark theme. The variations and usage guidelines table below outlines the different ways we use color in each theme.</li>
+  <li>The higher a container’s elevation is, the lighter that container background becomes. This technique helps to express depth in both our light and dark themes where we use different color palettes to create structure and hierarchy.</li>
+  <li>The color palette has been deliberately choosen so that our dark theme is as thoughtfully designed as our light theme. For example, the 400 value secondary color palette should be switched to the 300 value in dark theme i.e. <code>--yellow-400</code> in light theme should be <code>--yellow-300</code> in dark theme.</li>
+  <li>Shadows should not be inverted to create a glow effect. Shadows should still be used in the same way as they are in light theme, they are simply more subtle as the backgrounds are darker. We have created background fills that allow a subtle depth to be created when a shadow is used.</li>
+</ul>
+
+<hr>
+
+<h3>Variations and usage guidance</h3>
+
+<h4>Neutrals</h4>
+
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+					<th width="10%">Swatch</th>
+          <th width="15%">Name</th>
+          <th width="15%">HEX</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-neutral-100"></div>
+          </td>
+          <td>Neutral 100</td>
+          <td>#ffffff</td>
+          <td>Surface backgrounds (sidebar, cards, and page headers) and primary action text</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-neutral-200"></div>
+          </td>
+          <td>Neutral 200</td>
+          <td>#f6f7fb</td>
+          <td>App background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-neutral-300"></div>
+          </td>
+          <td>Neutral 300</td>
+          <td>#edeff4</td>
+          <td>Dividers, card borders, and input field backgrounds</td>
+          <td>Primary text</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-neutral-400"></div>
+          </td>
+          <td>Neutral 400</td>
+          <td>#d9dde8</td>
+          <td>Input field border, secondary button border, and menu border</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-neutral-500"></div>
+          </td>
+          <td>Neutral 500</td>
+          <td>#939bb4</td>
+          <td>Icons and tertiary text</td>
+          <td>Secondary text</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h4>Ink</h4>
+
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+					<th width="10%">Swatch</th>
+          <th width="15%">Name</th>
+          <th width="15%">HEX</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-ink-100"></div>
+          </td>
+          <td>Ink 100</td>
+          <td>#646f90</td>
+          <td>Secondary text</td>
+          <td>Icons, and tertiary text</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-ink-200"></div>
+          </td>
+          <td>Ink 200</td>
+          <td>#303545</td>
+          <td>Primary text, secondary action text, modal backgrounds, and shadows</td>
+          <td>Secondary surface background (term cards on set page) and primary action text</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-ink-300"></div>
+          </td>
+          <td>Ink 300</td>
+          <td>#282E3E</td>
+          <td>Not used</td>
+          <td>Surface backgrounds (cards, sidebar background, app header)</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-ink-400"></div>
+          </td>
+          <td>Ink 400</td>
+          <td>#1A1D28</td>
+          <td>Not used</td>
+          <td>App background</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-ink-500"></div>
+          </td>
+          <td>Ink 500</td>
+          <td>#13141B</td>
+          <td>Not used</td>
+          <td>Page header backgrounds, and shadows</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h4>Teal</h4>
+
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+					<th width="10%">Swatch</th>
+          <th width="15%">Name</th>
+          <th width="15%">HEX</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-teal-100"></div>
+          </td>
+          <td>Teal 100</td>
+          <td>#e7f9f9</td>
+          <td>Message background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-teal-200"></div>
+          </td>
+          <td>Teal 200</td>
+          <td>#cff3f3</td>
+          <td>Discretionary</td>
+          <td>Discretionary</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-teal-300"></div>
+          </td>
+          <td>Teal 300</td>
+          <td>#77dddd</td>
+          <td>Not used</td>
+          <td>Primary action background, link text, and selected tab item</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-teal-400"></div>
+          </td>
+          <td>Teal 400</td>
+          <td>#3ccfcf</td>
+          <td>Primary action background, link text, and selected tab item</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-teal-500"></div>
+          </td>
+          <td>Teal 500</td>
+          <td>#28a7a7</td>
+          <td>Not used</td>
+					<td>Message background and badge background</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h4>Indigo</h4>
+
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+          <th width="10%">Swatch</th>
+          <th width="15%">Name</th>
+          <th width="15%">HEX</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-indigo-100"></div>
+          </td>
+          <td>Indigo 100</td>
+          <td>#eff3fb</td>
+          <td>Message background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-indigo-200"></div>
+          </td>
+          <td>Indigo 200</td>
+          <td>#cedaf3</td>
+          <td>Discretionary</td>
+          <td>Discretionary</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-indigo-300"></div>
+          </td>
+          <td>Indigo 300</td>
+          <td>#7b89c9</td>
+          <td>Not used</td>
+          <td>Brand color</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-indigo-400"></div>
+          </td>
+          <td>Indigo 400</td>
+          <td>#4257b2</td>
+          <td>Brand color, header background, and badge background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-indigo-500"></div>
+          </td>
+          <td>Indigo 500</td>
+          <td>#3b4c9b</td>
+          <td>Not used</td>
+					<td>Message background and badge background</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h4>Yellow</h4>
+
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+					<th width="10%">Swatch</th>
+          <th width="15%">Name</th>
+          <th width="15%">HEX</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-yellow-100"></div>
+          </td>
+          <td>Yellow 100</td>
+          <td>#fff9e3</td>
+          <td>Sidebar selected item background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-yellow-200"></div>
+          </td>
+          <td>Yellow 200</td>
+          <td>#ffedab</td>
+          <td>Discretionary</td>
+          <td>Sidebar selected item background</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-yellow-300"></div>
+          </td>
+          <td>Yellow 300</td>
+          <td>#ffdc62</td>
+          <td>Not used</td>
+          <td>Upgrade action background</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-yellow-400"></div>
+          </td>
+          <td>Yellow 400</td>
+          <td>#ffcd1f</td>
+          <td>Uprade button, badge background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-yellow-500"></div>
+          </td>
+          <td>Yellow 500</td>
+          <td>#997700</td>
+          <td>Not used</td>
+					<td>Message background and badge background</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h4>Coral</h4>
+
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+					<th width="10%">Swatch</th>
+          <th width="15%">Name</th>
+          <th width="15%">HEX</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-coral-100"></div>
+          </td>
+          <td>Coral 100</td>
+          <td>#fff3f1</td>
+          <td>Message background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-coral-200"></div>
+          </td>
+          <td>Coral 200</td>
+          <td>#ffdcd6</td>
+          <td>Discretionary</td>
+          <td>Discretionary</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-coral-300"></div>
+          </td>
+          <td>Coral 300</td>
+          <td>#ff9c8c</td>
+          <td>Not used</td>
+          <td>Error text</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-coral-400"></div>
+          </td>
+          <td>Coral 400</td>
+          <td>#ff725b</td>
+          <td>Badge background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-coral-500"></div>
+          </td>
+          <td>Coral 500</td>
+          <td>#c34632</td>
+          <td>Error text</td>
+          <td>Message background and badge background</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h4>Green</h4>
+
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+					<th width="10%">Swatch</th>
+          <th width="15%">Name</th>
+          <th width="15%">HEX</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-green-100"></div>
+          </td>
+          <td>Green 100</td>
+          <td>#f2fbf6</td>
+          <td>Message background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-green-200"></div>
+          </td>
+          <td>Green 200</td>
+          <td>#c8ecdb</td>
+          <td>Discretionary</td>
+          <td>Discretionary</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-green-300"></div>
+          </td>
+          <td>Green 300</td>
+          <td>#65c999</td>
+          <td>Not used</td>
+          <td>Badge background, success text</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-green-400"></div>
+          </td>
+          <td>Green 400</td>
+          <td>#23b26d</td>
+          <td>Badge background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-green-500"></div>
+          </td>
+          <td>Green 500</td>
+          <td>#19804f</td>
+          <td>Success text</td>
+					<td>Message background and badge background</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h4>Orange</h4>
+
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+					<th width="10%">Swatch</th>
+          <th width="15%">Name</th>
+          <th width="15%">HEX</th>
+          <th width="30%">Light theme</th>
+          <th width="30%">Dark theme</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-orange-100"></div>
+          </td>
+          <td>Orange 100</td>
+          <td>#fff8f0</td>
+          <td>Message background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-orange-200"></div>
+          </td>
+          <td>Orange 200</td>
+          <td>#fce1c0</td>
+          <td>Discretionary</td>
+          <td>Discretionary</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-orange-300"></div>
+          </td>
+          <td>Orange 300</td>
+          <td>#f5ab4c</td>
+          <td>Not used</td>
+          <td>Warning text</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-orange-400"></div>
+          </td>
+          <td>Orange 400</td>
+          <td>#f08700</td>
+          <td>Badge background</td>
+          <td>Not used</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="color-swatch-table color-swatch-orange-500"></div>
+          </td>
+          <td>Orange 500</td>
+          <td>#965501</td>
+          <td>Warning text</td>
+					<td>Message background and badge background</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% include pagination-links.html %}

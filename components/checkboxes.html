@@ -1,0 +1,63 @@
+---
+layout: default
+section: Components
+title: Checkboxes
+previous: Buttons
+previous-path: components/buttons
+next: Depth
+next-path: components/depth
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>Checkboxes are used in forms to collect input from users. They can be used for a single item, or for a list of items where people can choose any number of options, including zero.</p>
+<p>Checkboxes require the use of a button to apply the settings once they are selected. When used in a group, each checkbox is independent of all other checkboxes in the list; checking one box doesn&rsquo;t uncheck the others.</p>
+
+<h4>Example</h4>
+<p>A checkbox control has two primary states: selected and unselected. If required, there&rsquo;s an additional visual state for indeterminate.</p>
+<ol class="call-outs">
+  <li><strong>Group label:</strong> Conveys the purpose of a group of checkboxes.</li>
+  <li><strong>Selected:</strong> An active option in the list.</li>
+  <li><strong>Unselected:</strong> An inactive option in a list.</li>
+</ol>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/checkboxes/img-checkboxes-example-1.png" class="example-image-border" alt="Checkboxes anatomy example">
+  </div>
+</div>
+
+<h4>Content guidelines</h4>
+<ul>
+  <li>Write checkbox labels that explicitly describe the option. They should be worded as a statement that the selected state makes true, and the unselected state makes false.</li>
+  <li>Always use sentence case unless capitalization is required for words used in a checkbox label. For example: <i>I agree to the Terms & Conditions</i></li>
+</ul>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Web</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>iOS</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Android</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+{% include pagination-links.html %}
