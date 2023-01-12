@@ -1,0 +1,7 @@
+_site
+.sass-cache
+.jekyll-metadata
+.jekyll-cache/*
+*/.DS_Store
+.DS_Store
+.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/*
