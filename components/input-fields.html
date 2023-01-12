@@ -1,0 +1,57 @@
+---
+layout: default
+section: Components
+title: Input fields
+previous: Depth
+previous-path: components/depth
+next: Menus
+next-path: components/menus
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>Input fields are used in forms to help users enter, select, and search. Input fields are normally found within a form but can also be part of a modal, header, properties panel, or as a filter option on a page.</p>
+
+<h3>Example</h3>
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/input-fields/img-input-example-1.png" class="example-image-border" alt="Input field anatomy example">
+  </div>
+</div>
+<ol class="call-outs">
+  <li><strong>Inactive state</strong></li>
+  <li><strong>Active state</strong></li>
+  <li><strong>Input with help text</strong></li>
+  <li><strong>Error state</strong></li>
+</ol>
+
+<h3>Usage and behavior</h3>
+<ul>
+  <li>Input fields should be shown on white backgrounds by default. If that is not possible, invert the background of the input field to be white so it will be visible on a <code>neutral-200</code> background fill</li>
+  <li>Label text should indicate what sort of information the field requires.</li>
+  <li>Label text sits above the input area when user selects the field.</li>
+  <li>Label text shouldn’t be truncated. Keep it short, clear, and fully visible.</li>
+  <li>Label text shouldn’t take up multiple lines.</li>
+</ul>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Design</span>
+  </div>
+  {% include status-in-progress.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>React</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+{% include pagination-links.html %}

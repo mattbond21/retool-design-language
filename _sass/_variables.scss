@@ -1,0 +1,91 @@
+
+/* Colors  -------------------*/
+
+:root {
+    
+  --white: #fff;
+  --black: #000;
+  
+  --gray-025: #f9f9f9;
+  --gray-050: #f6f6f6;
+  --gray-100: #ebebeb;
+  --gray-200: #dfdfdf;
+  --gray-300: #c7c7c7;
+  --gray-400: #b3b3b3;
+  --gray-500: #999;
+  --gray-600: #777;
+  --gray-700: #555;
+  --gray-800: #222222;
+  --gray-900: #0d0d0d;
+
+  --blue-025: #f5faff;
+  --blue-050: #ecf6fe;
+  --blue-100: #d8ecfd;
+  --blue-200: #81c2f8;
+  --blue-300: #4ca7f6;
+  --blue-500: #2494f4;
+  --blue-700: #0b7ada;
+
+  --green-025: #f7fdf9;
+  --green-050: #e0f5e8;
+  --green-100: #baefcd;
+  --green-200: #71d094;
+  --green-300: #3fc06f;
+  --green-500: #349d5b;
+  --green-700: #2a7e49;
+
+  --yellow-025: #fffcf5;
+  --yellow-050: #fef5e1;
+  --yellow-100: #fde8be;
+  --yellow-200: #fed582;
+  --yellow-300: #f1c160;
+  --yellow-500: #f0b030;
+  --yellow-700: #c88912;
+
+  --red-025: #fef6f7;
+  --red-050: #fcedee;
+  --red-100: #fadbde;
+  --red-200: #f9aaaf;
+  --red-300: #ea6c76;
+  --red-500: #d7444c;
+  --red-700: #c32230;
+
+  --plum-025: #fff8ff;
+  --plum-050: #fceffc;
+  --plum-100: #f7def7;
+  --plum-200: #e2bee4;
+  --plum-300: #cf91d8;
+  --plum-500: #b062bc;
+  --plum-700: #9846a4;
+
+  --orange-025: #fef9f6;
+  --orange-050: #fef3ec;
+  --orange-100: #fce1cf;
+  --orange-200: #f9bf98;
+  --orange-300: #f5a570;
+  --orange-500: #f28d49;
+  --orange-700: #e4782f;
+}
+
+/* Fonts  -------------------*/
+
+@import url('https://rsms.me/inter/inter.css');
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+@font-face {
+  font-family: "Sohne Bold";
+  src: url("../fonts/soehne-web-dreiviertelfett.woff2") format("woff2"),
+       url("/fonts/soehne-web-dreiviertelfett.woff") format("woff"),
+       url("/fonts/soehne-web-dreiviertelfett.eot") format("eot");
+}
+
+@font-face {
+  font-family: "Sohne Regular";
+  src: url("../fonts/soehne-web-halbfett.woff2") format("woff2"),
+       url("/fonts/soehne-web-halbfett.woff") format("woff"),
+       url("/fonts/soehne-web-halbfett.eot") format("eot");
+}

@@ -1,0 +1,90 @@
+---
+layout: default
+section: Foundations
+title: Iconography
+previous: Color
+previous-path: foundations/color
+next: Shape
+next-path: foundations/shape
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>Icons are visual representations of commands, files, devices, directories, or common actions, and are used to provide visual context to enhance usability. They should be simple, bold enough to grab attention, and memorable. We utilize <a href="https://www.streamlinehq.com/icons/streamline-mini-bold" target="_blank">Streamline Bold</a> icons in our set, and create our own if necessary.</p>
+
+<h3>Icon sizes</h3>
+<p>Our icons should be displayed at two different sizes &mdash; 12px and 16px. We design our icons on a 16px canvas and exported as SVG to be resized with code. Our 16px size is the default usage 90% of the time so we optimize our icon library with this in mind. Some icons will not be perfectly crisp when using smaller and larger variations. When space is extreme tight and an icon is necessary, we utilize <a href="https://www.streamlinehq.com/icons/streamline-micro-bold" target="_blank">Streamline Micro Bold</a> icons.</p>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/icons/img-icon-sizes-800.png" class="example-image-border" alt="Icon sizes example">
+  </div>
+</div>
+
+<span class="heading-border"></span>
+
+<h2>Creating new icons</h2>
+
+<h3>Grid, layout, shapes, and keylines</h3>
+<p>Icons should be designed to be displayed at 16px, but are drawn on a 14px grid per the base Streamline set. Similarly, the 12px icons are displayed at 12px but drawn on a 10px grid. Designing icons this way allows for even spacing in the UI and uniformity within the icon set.</p>
+
+<p>Create icons on the grid using basic foundational shapes, which include; circles, rectangles (horizontal and vertical), and squares. Sticking to these shapes in the grid keeps consistent proportions throughout the icon set.</p>
+
+<div class="row">
+  <div class="six-col">
+    <h5>Grid</h5>
+    <img src="{{ site.baseurl }}images/pages/icons/img-icon-grid-400.png" class="example-image" alt="Icon grid">
+  </div>
+  <div class="six-col">
+    <h5>Keylines</h5>
+    <img src="{{ site.baseurl }}images/pages/icons/img-icon-keylines-400.png" class="example-image" alt="Keylines image">
+  </div>
+</div>
+
+<h4>Proportional icons</h4>
+<div class="row">
+  <div class="six-col">
+    <h5>Square icons</h5>
+    <p><strong>Width</strong> 12px<br><strong>Height</strong> 12px</p>
+    <img src="{{ site.baseurl }}images/pages/icons/img-icon-square-400.png" class="example-image" alt="Square icons">
+  </div>
+  <div class="six-col">
+    <h5>Circle icons</h5>
+    <p><strong>Width</strong> 14px<br><strong>Height</strong> 14px</p>
+    <img src="{{ site.baseurl }}images/pages/icons/img-icon-circle-grid-400.png" class="example-image" alt="Circle icons">
+  </div>
+</div>
+
+<h4>Disproportional icons</h4>
+<div class="row">
+  <div class="six-col">
+    <h5>Vertical rectangles</h5>
+    <p><strong>Width</strong> 10px<br><strong>Height</strong> 14px</p>
+    <img src="{{ site.baseurl }}images/pages/icons/img-icon-vert-rect-400.png" class="example-image" alt="Vertical rectangle icon">
+  </div>
+  <div class="six-col">
+    <h5>Horizontal rectangles</h5>
+    <p><strong>Width</strong> 14px<br><strong>Height</strong> 10px</p>
+    <img src="{{ site.baseurl }}images/pages/icons/img-icon-horz-rect-400.png" class="example-image" alt="Horizontal rectangle icons">
+  </div>
+</div>
+
+<h3>Pixel alignment</h3>
+<p>To avoid distorting an icon, position icons “on pixel” by making the X and Y coordinates into integers, without decimals.</p>
+
+<div class="row">
+  <div class="six-col">
+    <h5 class="text-do">Snapped pixels</h5>
+    <div class="line"></div>
+    <img src="{{ site.baseurl }}images/pages/icons/img-icon-snapped-pixels-400.png" class="example-image" alt="Snapped pixels example">
+  </div>
+  <div class="six-col">
+    <h5 class="text-dont">Misaligned pixels</h5>
+    <div class="line"></div>
+    <img src="{{ site.baseurl }}images/pages/icons/img-icon-blurry-pixels-400.png" class="example-image" alt="Misaligned pixels example">
+  </div>
+</div>
+
+{% include pagination-links.html %}

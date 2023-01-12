@@ -1,0 +1,39 @@
+---
+layout: default
+section: Foundations
+title: Spacing and size
+previous: Shape
+previous-path: foundations/shape
+next: Typography
+next-path: foundations/typography
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>The Retool Design Language encourages consistency across platforms and screen sizes by using uniform elements and spacing.</p>
+
+<p>By using our standard spacing, the user interface remains consistent, can be scaled easily, and uses rhythm to align elements correctly.</p>
+
+<p>We utilize an 8px &ldquo;soft grid&rdquo; for base spacing and element sizes. The below spacing increments apply to both horizontal and vertical spacing between elements.</p>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/spacing/img-spacing.png" class="example-image" alt="Spacing sizes">
+  </div>
+</div>
+
+<h2>Exceptions</h2>
+
+<p>Due to the natural of the Retool UI, we require smaller units, and at times, units that fall between the 8px grid. We make an exception for using 4px as a half unit in specific circumstances, and at the specific sizes below.</p>
+
+<p>It is important to use these spacing sizes as they are prescribed, and not to combine them. For example, 56px (combining 28px twice) should not be used even though it is divisible by 8px. Instead us a standard spacing size from the samples provided.</p>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/spacing/img-spacing-alts.png" class="example-image" alt="Spacing sizes">
+  </div>
+</div>
+
+{% include pagination-links.html %}

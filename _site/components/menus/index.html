@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>Menus | Components | Retool Design Language</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://mattbond21.github.io/retool-design-language///components/menus/">
+
+    <link rel="icon" type="image/png" href="/images/logo/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/logo/favicon.png">
+</head>
+
+
+<body class="drawer drawer--right">
+
+  <header role="banner">
+    <nav class="drawer-nav" role="navigation">
+      <div class="drawer-menu">
+  <div class="main-nav">
+    <h5 class="nav-section-header">Getting started</h5>
+    <ul class="nav-name"><li><a href="/getting-started/overview/">Overview</a></li></ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Foundations</h5>
+    <ul class="nav-name"><li><a href="/foundations/color/">Color</a></li>
+<li><a href="/foundations/iconography/">Iconography</a></li>
+<li><a href="/foundations/shape/">Shape</a></li>
+<li><a href="/foundations/spacing/">Spacing and size</a></li>
+<li><a href="/foundations/typography/">Typography</a></li>
+</ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Components</h5>
+    <ul class="nav-name"><li><a href="/components/avatars/">Avatars</a></li>
+<li><a href="/components/buttons/">Buttons</a></li>
+<li><a href="/components/checkboxes/">Checkboxes</a></li>
+<!-- <li><a href="/components/depth/">Depth</a></li> -->
+<li><a href="/components/input-fields/">Input fields</a></li>
+<li class="nav-active"><a href="/components/menus/">Menus</a></li>
+<li><a href="/components/modal-dialogs/">Modal dialogs</a></li>
+<li><a href="/components/radio-buttons/">Radio buttons</a></li>
+<li><a href="/components/tabs/">Tabs</a></li>
+<li><a href="/components/toasts/">Toasts</a></li>
+<li><a href="/components/tooltips/">Tooltips</a></li>
+</ul>
+  </div>
+</div>
+
+    </nav>
+  </header>
+
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="/">
+        <img src="/images/logo/design-logo-mark.svg" class="logo">
+      </a>
+    </div>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+  </div>
+
+  <app>
+    <div class="empty-sidebar">
+      <div id="sidebar">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="/images/logo/design-logo-mark.svg" class="logo">
+          </a>
+        </div>
+
+        <div class="drawer-menu">
+  <div class="main-nav">
+    <h5 class="nav-section-header">Getting started</h5>
+    <ul class="nav-name"><li><a href="/getting-started/overview/">Overview</a></li></ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Foundations</h5>
+    <ul class="nav-name"><li><a href="/foundations/color/">Color</a></li>
+<li><a href="/foundations/iconography/">Iconography</a></li>
+<li><a href="/foundations/shape/">Shape</a></li>
+<li><a href="/foundations/spacing/">Spacing and size</a></li>
+<li><a href="/foundations/typography/">Typography</a></li>
+</ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Components</h5>
+    <ul class="nav-name"><li><a href="/components/avatars/">Avatars</a></li>
+<li><a href="/components/buttons/">Buttons</a></li>
+<li><a href="/components/checkboxes/">Checkboxes</a></li>
+<!-- <li><a href="/components/depth/">Depth</a></li> -->
+<li><a href="/components/input-fields/">Input fields</a></li>
+<li class="nav-active"><a href="/components/menus/">Menus</a></li>
+<li><a href="/components/modal-dialogs/">Modal dialogs</a></li>
+<li><a href="/components/radio-buttons/">Radio buttons</a></li>
+<li><a href="/components/tabs/">Tabs</a></li>
+<li><a href="/components/toasts/">Toasts</a></li>
+<li><a href="/components/tooltips/">Tooltips</a></li>
+</ul>
+  </div>
+</div>
+
+
+      </div> <!-- #sidebar -->
+    </div> <!-- .empty-sidebar -->
+
+    <div id="main">
+      <div class="main-container">
+
+        <h2>Menus</h2>
+
+<span class="heading-border"></span>
+
+<p>Menus allow users to make a selection from multiple options in a list. Menus are less prominent in the UI and should be used for infrequent actions, when the UI is showing too many actions in a toolbar, or when an overflow is needed due to space constraints.</p>
+
+<h3>Behavior</h3>
+<p>Menus are only triggered when clicking or tapping (not on hover) glyph buttons, selection controls, or input fields.</p>
+
+<p>Menus should appear in front of all other permanent UI elements when active. When ordering menu items, the most important items should be shown at the top of the menu.</p>
+
+<h3>Types and anatomy</h3>
+
+<div class="row">
+  <div class="six-col">
+    <h4>Text list</h4>
+    <img src="/images/pages/menus/img-menus-example-1.png" class="example-image-border" alt="Text list example">
+  </div>
+  <div class="six-col">
+    <h4>&nbsp;</h4>
+    <ol class="call-outs">
+      <li>The most common actions are positioned at the top of the menu</li>
+      <li>Destructive or least common actions should be separated at the bottom of the list</li>
+    </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="six-col">
+    <h4>Text with selection state</h4>
+    <img src="/images/pages/menus/img-menus-example-2.png" class="example-image-border" alt="Text with selection state example">
+  </div>
+  <div class="six-col">
+    <h4>&nbsp;</h4>
+    <ol class="call-outs">
+      <li>When using a selection group, there is an optional section heading added for clarity.</li>
+      <li>Selected state</li>
+      <li>Hover state</li>
+    </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="six-col">
+    <h4>User profile</h4>
+    <img src="/images/pages/menus/img-menus-example-3.png" class="example-image-border" alt="User profile example">
+  </div>
+  <div class="six-col">
+    <h4>&nbsp;</h4>
+    <ol class="call-outs">
+      <li>User details are not clickable and don&rsquo;t have a hover state</li>
+      <li>Prioritized actions based on user importance</li>
+      <li>Menu divider</li>
+      <li>Secondary actions grouped together</li>
+      <li>Least common or destructive actions should be separated at the bottom of the list</li>
+    </ol>
+  </div>
+</div>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Design</span>
+  </div>
+  <div class="status-in-progress">
+  <span class="dot"></span>
+  <span>In progress</span>
+</div>
+
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>React</span>
+  </div>
+  <div class="status-not-started">
+  <span class="dot"></span>
+  <span>Not started</span>
+</div>
+
+</div>
+
+<div class="row pagination-links">
+  <div class="col">
+    
+    <a href="/components/input-fields" class="next-previous-links">
+      <div class="previous">
+        <span class="icon-20 icon-20-chevron-left"></span>
+        Previous
+        <div class="title">
+          Input fields
+        </div>
+      </div>
+    </a>
+    
+  </div>
+  <div class="col">
+    
+    <a href="/components/modal-dialogs" class="next-previous-links">
+      <div class="next">
+        Next
+        <span class="icon-20 icon-20-chevron-right"></span>
+        <div class="title">
+          Modal dialogs
+        </div>
+      </div>
+    </a>
+    
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+  </app>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="/js/main.js"></script>
+<!-- iScroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script>
+  anchors.options = {
+    placement: 'left',
+    visible: 'hover',
+    icon: '#'
+  };
+
+  anchors.add('h3,h4,h5'); -->
+</script>
+
+
+</body>
+
+</html>

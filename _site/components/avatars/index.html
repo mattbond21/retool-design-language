@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>Avatars | Components | Retool Design Language</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://mattbond21.github.io/retool-design-language///components/avatars/">
+
+    <link rel="icon" type="image/png" href="/images/logo/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/logo/favicon.png">
+</head>
+
+
+<body class="drawer drawer--right">
+
+  <header role="banner">
+    <nav class="drawer-nav" role="navigation">
+      <div class="drawer-menu">
+  <div class="main-nav">
+    <h5 class="nav-section-header">Getting started</h5>
+    <ul class="nav-name"><li><a href="/getting-started/overview/">Overview</a></li></ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Foundations</h5>
+    <ul class="nav-name"><li><a href="/foundations/color/">Color</a></li>
+<li><a href="/foundations/iconography/">Iconography</a></li>
+<li><a href="/foundations/shape/">Shape</a></li>
+<li><a href="/foundations/spacing/">Spacing and size</a></li>
+<li><a href="/foundations/typography/">Typography</a></li>
+</ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Components</h5>
+    <ul class="nav-name"><li class="nav-active"><a href="/components/avatars/">Avatars</a></li>
+<li><a href="/components/buttons/">Buttons</a></li>
+<li><a href="/components/checkboxes/">Checkboxes</a></li>
+<!-- <li><a href="/components/depth/">Depth</a></li> -->
+<li><a href="/components/input-fields/">Input fields</a></li>
+<li><a href="/components/menus/">Menus</a></li>
+<li><a href="/components/modal-dialogs/">Modal dialogs</a></li>
+<li><a href="/components/radio-buttons/">Radio buttons</a></li>
+<li><a href="/components/tabs/">Tabs</a></li>
+<li><a href="/components/toasts/">Toasts</a></li>
+<li><a href="/components/tooltips/">Tooltips</a></li>
+</ul>
+  </div>
+</div>
+
+    </nav>
+  </header>
+
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="/">
+        <img src="/images/logo/design-logo-mark.svg" class="logo">
+      </a>
+    </div>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+  </div>
+
+  <app>
+    <div class="empty-sidebar">
+      <div id="sidebar">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="/images/logo/design-logo-mark.svg" class="logo">
+          </a>
+        </div>
+
+        <div class="drawer-menu">
+  <div class="main-nav">
+    <h5 class="nav-section-header">Getting started</h5>
+    <ul class="nav-name"><li><a href="/getting-started/overview/">Overview</a></li></ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Foundations</h5>
+    <ul class="nav-name"><li><a href="/foundations/color/">Color</a></li>
+<li><a href="/foundations/iconography/">Iconography</a></li>
+<li><a href="/foundations/shape/">Shape</a></li>
+<li><a href="/foundations/spacing/">Spacing and size</a></li>
+<li><a href="/foundations/typography/">Typography</a></li>
+</ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Components</h5>
+    <ul class="nav-name"><li class="nav-active"><a href="/components/avatars/">Avatars</a></li>
+<li><a href="/components/buttons/">Buttons</a></li>
+<li><a href="/components/checkboxes/">Checkboxes</a></li>
+<!-- <li><a href="/components/depth/">Depth</a></li> -->
+<li><a href="/components/input-fields/">Input fields</a></li>
+<li><a href="/components/menus/">Menus</a></li>
+<li><a href="/components/modal-dialogs/">Modal dialogs</a></li>
+<li><a href="/components/radio-buttons/">Radio buttons</a></li>
+<li><a href="/components/tabs/">Tabs</a></li>
+<li><a href="/components/toasts/">Toasts</a></li>
+<li><a href="/components/tooltips/">Tooltips</a></li>
+</ul>
+  </div>
+</div>
+
+
+      </div> <!-- #sidebar -->
+    </div> <!-- .empty-sidebar -->
+
+    <div id="main">
+      <div class="main-container">
+
+        <h2>Avatars</h2>
+
+<span class="heading-border"></span>
+
+<p>We use round avatars to quickly identify users on the Retool platform. No other entity or container should be expressed in a circular shape to avoid confusion between a user and another object type.</p>
+
+<h3>Usage</h3>
+
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+          <th width="15%">Name</th>
+          <th width="15%">Size</th>
+          <th width="20%">Avatar</th>
+          <th>Example usage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Small</td>
+          <td>24px</td>
+          <td>
+            <div class="avatar avatar-small"></div>
+          </td>
+          <td>Typeahead menus, inline meta data in tables</td>
+        </tr>
+        <tr>
+          <td>Medium</td>
+          <td>32px</td>
+          <td>
+            <div class="avatar avatar-medium"></div>
+          </td>
+          <td>User profile dropdown menu, or when viewing a list of users in a table in a stacked format (i.e. user permissions)</td>
+        </tr>
+        <tr>
+          <td>Large</td>
+          <td>64px</td>
+          <td>
+            <div class="avatar avatar-large"></div>
+          </td>
+          <td>Profile and account pages for users</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h3>Default user avatars</h3>
+<p>We provide users with a default avatar based on the letter of their first name and a colored background from our customization color palette. If they don't upload a profile avatar during sign up, one of these defaults will be automatically added to their account.</p>
+
+<div class="row">
+  <div class="col">
+    <img src="/images/pages/avatars/img-avatars-800.png" class="example-image-border" alt="Avatar examples">
+  </div>
+</div>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Design</span>
+  </div>
+  <div class="status-in-progress">
+  <span class="dot"></span>
+  <span>In progress</span>
+</div>
+
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>React</span>
+  </div>
+  <div class="status-not-started">
+  <span class="dot"></span>
+  <span>Not started</span>
+</div>
+
+</div>
+
+<div class="row pagination-links">
+  <div class="col">
+    
+    <a href="/foundations/typography" class="next-previous-links">
+      <div class="previous">
+        <span class="icon-20 icon-20-chevron-left"></span>
+        Previous
+        <div class="title">
+          Typography
+        </div>
+      </div>
+    </a>
+    
+  </div>
+  <div class="col">
+    
+    <a href="/components/buttons" class="next-previous-links">
+      <div class="next">
+        Next
+        <span class="icon-20 icon-20-chevron-right"></span>
+        <div class="title">
+          Buttons
+        </div>
+      </div>
+    </a>
+    
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+  </app>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="/js/main.js"></script>
+<!-- iScroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script>
+  anchors.options = {
+    placement: 'left',
+    visible: 'hover',
+    icon: '#'
+  };
+
+  anchors.add('h3,h4,h5'); -->
+</script>
+
+
+</body>
+
+</html>

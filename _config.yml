@@ -1,0 +1,14 @@
+# Permalinks
+permalink: pretty
+
+# Compile CSS
+sass:
+  style: compressed
+sass:
+  sass_dir: _sass
+
+# Setup
+title:            Retool Design Language
+tagline:          'Retool Design System'
+url:              https://tryretool.github.io/retool-design-language/
+baseurl:          https://tryretool.github.io/retool-design-language/

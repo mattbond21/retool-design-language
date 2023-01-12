@@ -1,0 +1,87 @@
+---
+layout: default
+section: Components
+title: Avatars
+previous: Typography
+previous-path: foundations/typography
+next: Buttons
+next-path: components/buttons
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>We use round avatars to quickly identify users on the Retool platform. No other entity or container should be expressed in a circular shape to avoid confusion between a user and another object type.</p>
+
+<h3>Usage</h3>
+
+<div class="row">
+  <div class="col">
+    <table>
+      <thead>
+        <tr>
+          <th width="15%">Name</th>
+          <th width="15%">Size</th>
+          <th width="20%">Avatar</th>
+          <th>Example usage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Small</td>
+          <td>24px</td>
+          <td>
+            <div class="avatar avatar-small"></div>
+          </td>
+          <td>Typeahead menus, inline meta data in tables</td>
+        </tr>
+        <tr>
+          <td>Medium</td>
+          <td>32px</td>
+          <td>
+            <div class="avatar avatar-medium"></div>
+          </td>
+          <td>User profile dropdown menu, or when viewing a list of users in a table in a stacked format (i.e. user permissions)</td>
+        </tr>
+        <tr>
+          <td>Large</td>
+          <td>64px</td>
+          <td>
+            <div class="avatar avatar-large"></div>
+          </td>
+          <td>Profile and account pages for users</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h3>Default user avatars</h3>
+<p>We provide users with a default avatar based on the letter of their first name and a colored background from our customization color palette. If they don't upload a profile avatar during sign up, one of these defaults will be automatically added to their account.</p>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/avatars/img-avatars-800.png" class="example-image-border" alt="Avatar examples">
+  </div>
+</div>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Design</span>
+  </div>
+  {% include status-in-progress.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>React</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+{% include pagination-links.html %}

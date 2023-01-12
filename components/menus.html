@@ -1,0 +1,88 @@
+---
+layout: default
+section: Components
+title: Menus
+previous: Input fields
+previous-path: components/input-fields
+next: Modal dialogs
+next-path: components/modal-dialogs
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>Menus allow users to make a selection from multiple options in a list. Menus are less prominent in the UI and should be used for infrequent actions, when the UI is showing too many actions in a toolbar, or when an overflow is needed due to space constraints.</p>
+
+<h3>Behavior</h3>
+<p>Menus are only triggered when clicking or tapping (not on hover) glyph buttons, selection controls, or input fields.</p>
+
+<p>Menus should appear in front of all other permanent UI elements when active. When ordering menu items, the most important items should be shown at the top of the menu.</p>
+
+<h3>Types and anatomy</h3>
+
+<div class="row">
+  <div class="six-col">
+    <h4>Text list</h4>
+    <img src="{{ site.baseurl }}images/pages/menus/img-menus-example-1.png" class="example-image-border" alt="Text list example">
+  </div>
+  <div class="six-col">
+    <h4>&nbsp;</h4>
+    <ol class="call-outs">
+      <li>The most common actions are positioned at the top of the menu</li>
+      <li>Destructive or least common actions should be separated at the bottom of the list</li>
+    </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="six-col">
+    <h4>Text with selection state</h4>
+    <img src="{{ site.baseurl }}images/pages/menus/img-menus-example-2.png" class="example-image-border" alt="Text with selection state example">
+  </div>
+  <div class="six-col">
+    <h4>&nbsp;</h4>
+    <ol class="call-outs">
+      <li>When using a selection group, there is an optional section heading added for clarity.</li>
+      <li>Selected state</li>
+      <li>Hover state</li>
+    </ol>
+  </div>
+</div>
+
+<div class="row">
+  <div class="six-col">
+    <h4>User profile</h4>
+    <img src="{{ site.baseurl }}images/pages/menus/img-menus-example-3.png" class="example-image-border" alt="User profile example">
+  </div>
+  <div class="six-col">
+    <h4>&nbsp;</h4>
+    <ol class="call-outs">
+      <li>User details are not clickable and don&rsquo;t have a hover state</li>
+      <li>Prioritized actions based on user importance</li>
+      <li>Menu divider</li>
+      <li>Secondary actions grouped together</li>
+      <li>Least common or destructive actions should be separated at the bottom of the list</li>
+    </ol>
+  </div>
+</div>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Design</span>
+  </div>
+  {% include status-in-progress.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>React</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+{% include pagination-links.html %}

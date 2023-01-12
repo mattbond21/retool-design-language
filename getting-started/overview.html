@@ -1,0 +1,58 @@
+---
+layout: default
+section: Getting started
+title: Overview
+previous: Home
+previous-path: ../
+next: Color
+next-path: foundations/color
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<h3>What is the Retool Design Language?</h3>
+<p>It’s a collection of components defined by shared principles and patterns. It is a shared vocabulary across EPD, and how we communicate with our customers. The design team tries to solve challenging interactions at the beginning, and then apply the solutions consistently across Retool&mdash;making sure people only have to learn our product once.</p>
+
+<p>We’re creating this design language with solid foundations in mind. These foundations are used to retain the Retool brand through thoughtful use of color, typography, layout, and iconography. This is the source of truth for developers and designers building the Retool UI.</p>
+
+<p>Foundations are global variables that are set in the codebase, meaning that changning a value will change it everywhere in the product. Overwriting foundation values is not recommended since any future changes will not be reflected, and in the short term, will cause fragmentation in the product experience.</p>
+
+<h3>Where can I give feedback, make requests, or ask a question?</h3>
+<p>Come and chat with us in the #design Slack channel.</p>
+
+<span class="heading-border"></span>
+
+<h3>System principles</h3>
+<h4>Design together</h4>
+<p>Worry less about fragmentation. Naturally design in step with each other by utilizing existing components made to fit together.</p>
+
+<h4>Build on each other&rsquo;s solutions</h4>
+<p>Stop solving the same problems over and over again. Take advantage of the solutions of your peers so you can focus on more complex problems.</p>
+
+<h4>Be more efficient</h4>
+<p>Get back the time you would have spent red-lining specs. Components implemented correctly in code are already properly spaced and measured. That means you can spend less time overseeing implementation and more time designing.</p>
+
+<span class="heading-border"></span>
+
+<h3>Evolution</h3>
+
+<h4>Approach</h4>
+<p>Necessary, non-destructive, and abstractable. As a crafted system, each addition demonstrates these attributes to ensure that evolution is progressive and sustainable.</p>
+
+<h4>Necessary, non-destructive, and abstractable</h4>
+<p>Before introducing new components or extensions to components consider these statements:</p>
+<ul>
+    <li>Each component is necessary, in that there is no other component that can do what it does.</li>
+    <li>It is non-destructive to the system in form and behavior so that it does not introduce regression.</li>
+    <li>And, it is not a local optimization but can benefit multiple other scenarios.</li>
+</ul>
+
+<h4>Office hours (Coming soon)</h4>
+<p>These are regular time slots where designers can answer questions and provide direction on the usage of the system. If conflict arises, resolution should be sought in workshops (coming soon).</p>
+
+<h4>Retool UI workshops (Coming soon)</h4>
+<p>These are working sessions for pod designers to work together to resolve conflicts between new designs and existing components. Resolutions that change, remove, or introduce new components are then added into Retool UI.</p>
+
+{% include pagination-links.html %}

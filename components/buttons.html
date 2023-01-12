@@ -1,0 +1,109 @@
+---
+layout: default
+section: Components
+title: Buttons
+previous: Avatars
+previous-path: components/avatars
+next: Checkboxes
+next-path: components/checkboxes
+---
+
+<h2>{{ page.title }}</h2>
+
+<span class="heading-border"></span>
+
+<p>Use buttons to trigger actions and links. Buttons can contain a combination of a clear label and an icon while links are always text. Buttons are typically placed throughout the UI&VeryThinSpace;&mdash;&VeryThinSpace;modal dialogs, forms, and toolbars.</p>
+
+<h3>Types and anatomy</h3>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-anatomy-800.png" class="example-image-border" alt="Buttons anatomy example">
+  </div>
+</div>
+
+<ol class="call-outs">
+  <li><strong>Primary button (high emphasis):</strong> Primary buttons have more emphasis, as they use a color fill to stand out on the page, and are used as the most important action on the page.</li>
+  <li><strong>Secondary button (medium emphasis):</strong> Secondary buttons are used for more emphasis than text buttons but are not the most important action on the page.</li>
+  <li><strong>Text button (low emphasis):</strong> Text buttons are typically used for less important actions.</li>
+  <li><strong>Toggle button:</strong> Toggle buttons group a set of actions together. They’re used when switching between similar view types of content where an icon represents each option, like a list or grid view. If you’re looking to use labels for navigation purposes, please use the tab component instead.</li>
+  <li><strong>Icon button:</strong> Icon buttons are used in toolbars when there are too many actions to display with labels. These are usually the least important actions on the page, and should not have the primary button style applied. If there are more than four actions to be displayed together, use an overflow button and menu to display the remaining actions.</li>
+</ol>
+
+<h3>Hierarchy</h3>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-emphasis-800.png" class="example-image-border" alt="Buttons emphasis diagram">
+  </div>
+</div>
+
+<h4>Only one primary action</h4>
+<p>A layout should contain a single prominent button that guides users with the most important action on the page. Other buttons have less importance in the hierarchy and appropriately toned down.</p>
+
+<h4>Obvious, easy, and possible actions</h4>
+<p>An app can show more than one button in a layout at a time, so a high-emphasis button can be accompanied by medium- and low-emphasis buttons that perform less important actions. When using multiple buttons, ensure the available state of one button doesn&rsquo;t look like the disabled state of another.</p>
+
+<h3>Labeling</h3>
+<p>All button labels are sentence case. They should be as short as possible, while clearly explaining to users what happens when they click the button.</p>
+
+<div class="row">
+  <div class="six-col">
+    <h5 class="text-do">Do</h5>
+    <div class="line"></div>
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-labels-correct-400.png" class="example-image-border" alt="Example of correct button label usage">
+  </div>
+  <div class="six-col">
+    <h5 class="text-dont">Don&rsquo;t</h5>
+    <div class="line"></div>
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-labels-incorrect-400.png" class="example-image-border" alt="Example of incorrect button label usage">
+  </div>
+</div>
+
+<h3>Sizes</h3>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-sizes-800.png" class="example-image-border" alt="Buttons sizes example">
+  </div>
+</div>
+
+<ol class="call-outs">
+  <li><strong>Small (28px):</strong> Used in tables or smaller spaces where the action isn&rsquo;t competing for the users attention.</li>
+  <li><strong>Medium (32px):</strong> The default button size for most actions on the page.</li>
+  <li><strong>Large (40px):</strong> Should be used sparringly, and only when the medium button isn&rsquo;t prominent enough.</li>
+</ol>
+
+<h3>States</h3>
+
+<div class="row">
+  <div class="col">
+    <img src="{{ site.baseurl }}images/pages/buttons/img-buttons-states-800.png" class="example-image-border" alt="Buttons states example">
+  </div>
+</div>
+
+<ol class="call-outs">
+  <li><strong>Default: </strong>Buttons should look provide the affordance of being clickable in their default state.</li>
+  <li><strong>Hover: </strong>We darken the background, text color, or border color to indicate interactivity.</li>
+  <li><strong>Disabled: </strong>We reduce the opacity of the button when it is disabled. When the button becomes enabled again, the button returns to it's default state.</li>
+</ol>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Design</span>
+  </div>
+  {% include status-in-progress.html %}
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>React</span>
+  </div>
+  {% include status-not-started.html %}
+</div>
+
+{% include pagination-links.html %}

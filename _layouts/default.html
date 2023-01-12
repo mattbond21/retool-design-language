@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+<body class="drawer drawer--right">
+
+  <header role="banner">
+    <nav class="drawer-nav" role="navigation">
+      {% include sidebar-content.html %}
+    </nav>
+  </header>
+
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="{{ site.baseurl }}">
+        <img src="{{ site.baseurl }}images/logo/design-logo-mark.svg" class="logo">
+      </a>
+    </div>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+  </div>
+
+  <app>
+    <div class="empty-sidebar">
+      <div id="sidebar">
+        <div class="nav-logo">
+          <a href="{{ site.baseurl }}">
+            <img src="{{ site.baseurl }}images/logo/design-logo-mark.svg" class="logo">
+          </a>
+        </div>
+
+        {% include sidebar-content.html %}
+
+      </div> <!-- #sidebar -->
+    </div> <!-- .empty-sidebar -->
+
+    <div id="main">
+      <div class="main-container">
+
+        {{ content }}
+
+      </div>
+    </div>
+  </app>
+
+  {% include footer.html %}
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+
+    <title>Tooltips | Components | Retool Design Language</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://mattbond21.github.io/retool-design-language///components/tooltips/">
+
+    <link rel="icon" type="image/png" href="/images/logo/favicon.png" />
+    <link rel="apple-touch-icon" href="/images/logo/favicon.png">
+</head>
+
+
+<body class="drawer drawer--right">
+
+  <header role="banner">
+    <nav class="drawer-nav" role="navigation">
+      <div class="drawer-menu">
+  <div class="main-nav">
+    <h5 class="nav-section-header">Getting started</h5>
+    <ul class="nav-name"><li><a href="/getting-started/overview/">Overview</a></li></ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Foundations</h5>
+    <ul class="nav-name"><li><a href="/foundations/color/">Color</a></li>
+<li><a href="/foundations/iconography/">Iconography</a></li>
+<li><a href="/foundations/shape/">Shape</a></li>
+<li><a href="/foundations/spacing/">Spacing and size</a></li>
+<li><a href="/foundations/typography/">Typography</a></li>
+</ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Components</h5>
+    <ul class="nav-name"><li><a href="/components/avatars/">Avatars</a></li>
+<li><a href="/components/buttons/">Buttons</a></li>
+<li><a href="/components/checkboxes/">Checkboxes</a></li>
+<!-- <li><a href="/components/depth/">Depth</a></li> -->
+<li><a href="/components/input-fields/">Input fields</a></li>
+<li><a href="/components/menus/">Menus</a></li>
+<li><a href="/components/modal-dialogs/">Modal dialogs</a></li>
+<li><a href="/components/radio-buttons/">Radio buttons</a></li>
+<li><a href="/components/tabs/">Tabs</a></li>
+<li><a href="/components/toasts/">Toasts</a></li>
+<li class="nav-active"><a href="/components/tooltips/">Tooltips</a></li>
+</ul>
+  </div>
+</div>
+
+    </nav>
+  </header>
+
+  <div class="mobile-header">
+    <div class="mobile-header-logo">
+      <a href="/">
+        <img src="/images/logo/design-logo-mark.svg" class="logo">
+      </a>
+    </div>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+  </div>
+
+  <app>
+    <div class="empty-sidebar">
+      <div id="sidebar">
+        <div class="nav-logo">
+          <a href="/">
+            <img src="/images/logo/design-logo-mark.svg" class="logo">
+          </a>
+        </div>
+
+        <div class="drawer-menu">
+  <div class="main-nav">
+    <h5 class="nav-section-header">Getting started</h5>
+    <ul class="nav-name"><li><a href="/getting-started/overview/">Overview</a></li></ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Foundations</h5>
+    <ul class="nav-name"><li><a href="/foundations/color/">Color</a></li>
+<li><a href="/foundations/iconography/">Iconography</a></li>
+<li><a href="/foundations/shape/">Shape</a></li>
+<li><a href="/foundations/spacing/">Spacing and size</a></li>
+<li><a href="/foundations/typography/">Typography</a></li>
+</ul>
+  </div>
+
+  <div class="main-nav">
+    <h5 class="nav-section-header">Components</h5>
+    <ul class="nav-name"><li><a href="/components/avatars/">Avatars</a></li>
+<li><a href="/components/buttons/">Buttons</a></li>
+<li><a href="/components/checkboxes/">Checkboxes</a></li>
+<!-- <li><a href="/components/depth/">Depth</a></li> -->
+<li><a href="/components/input-fields/">Input fields</a></li>
+<li><a href="/components/menus/">Menus</a></li>
+<li><a href="/components/modal-dialogs/">Modal dialogs</a></li>
+<li><a href="/components/radio-buttons/">Radio buttons</a></li>
+<li><a href="/components/tabs/">Tabs</a></li>
+<li><a href="/components/toasts/">Toasts</a></li>
+<li class="nav-active"><a href="/components/tooltips/">Tooltips</a></li>
+</ul>
+  </div>
+</div>
+
+
+      </div> <!-- #sidebar -->
+    </div> <!-- .empty-sidebar -->
+
+    <div id="main">
+      <div class="main-container">
+
+        <h2>Tooltips</h2>
+<span class="heading-border"></span>
+
+<p>Use tooltips to identify or add a small amount of information to an element. Typically, tooltips are used to help users understand the meaning or purpose of icons, showing the full version of truncated text, or displaying the alt text for an image. Tooltips do not include any interactivity, such as links, but may help introduce users to keyboard shortcuts.</p>
+
+<p>When writing tooltips, be short and concise. When you need to add more than a single line of extra information, consider using a pop-over instead.</p>
+
+<h4>Example</h4>
+<ol class="call-outs">
+  <li><strong>Label:</strong> Information about the hovered element.</li>
+  <li><strong>Keyboard shortcut:</strong> If appropriate, add keyboard shortcuts to tooltips to aid discovery.</li>
+</ol>
+
+<div class="row">
+  <div class="col">
+    <img src="/images/pages/tooltips/img-tooltips-800.png" class="example-image-border" alt="Tooltips anatomy example">
+  </div>
+</div>
+
+<h3>Positioning</h3>
+<p>The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen. Use the bottom tooltip as the default position, unless tooltips are needed for vertically stacked items where a left or right positioned tooltip would be more appropriate.</p>
+
+<div class="row">
+  <div class="col">
+    <img src="/images/pages/tooltips/img-tooltip-positions.png" class="example-image-border" alt="Tooltips position examples">
+  </div>
+</div>
+
+<h3>Animation</h3>
+<p>Animations for displaying a tooltip will behave slightly differently depending on intent. Initially, when hovering over an element, the tooltip will animate into place with a short delay. When hovering over subsequent elements in quick succession, the tooltip is displayed without animating.</p>
+
+<hr>
+
+<h3>Implementation status</h3>
+
+<div class="status">
+  <div class="platform-name">
+    <span>Design</span>
+  </div>
+  <div class="status-in-progress">
+  <span class="dot"></span>
+  <span>In progress</span>
+</div>
+
+</div>
+
+<div class="status">
+  <div class="platform-name">
+    <span>React</span>
+  </div>
+  <div class="status-not-started">
+  <span class="dot"></span>
+  <span>Not started</span>
+</div>
+
+</div>
+
+<div class="row pagination-links">
+  <div class="col">
+    
+    <a href="/components/toasts" class="next-previous-links">
+      <div class="previous">
+        <span class="icon-20 icon-20-chevron-left"></span>
+        Previous
+        <div class="title">
+          Toasts
+        </div>
+      </div>
+    </a>
+    
+  </div>
+  <div class="col">
+    
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+  </app>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="/js/main.js"></script>
+<!-- iScroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script>
+  anchors.options = {
+    placement: 'left',
+    visible: 'hover',
+    icon: '#'
+  };
+
+  anchors.add('h3,h4,h5'); -->
+</script>
+
+
+</body>
+
+</html>
