@@ -2,94 +2,70 @@
 /* Colors  -------------------*/
 
 :root {
-  --tiny-spacing: 4px;
-  --base-spacing: 8px;
-  --small-spacing: 16px;
-  --medium-spacing: 24px;
-  --large-spacing: 32px;
-  --xlarge-spacing: 48px;
-  --xxlarge-spacing: 64px;
+    
+  --white: #fff;
+  --black: #000;
+  
+  --gray-025: #f9f9f9;
+  --gray-050: #f6f6f6;
+  --gray-100: #ebebeb;
+  --gray-200: #dfdfdf;
+  --gray-300: #c7c7c7;
+  --gray-400: #b3b3b3;
+  --gray-500: #999;
+  --gray-600: #777;
+  --gray-700: #555;
+  --gray-800: #222222;
+  --gray-900: #0d0d0d;
 
-  --neutral-100: #ffffff;
-  --neutral-200: #f6f7fb; /* canvas background */
-  --neutral-300: #edeff4; /* dividers */
-  --neutral-400: #d9dde8; /* button and form borders */
-  --neutral-500: #939bb4; /* incidental text and icons */
+  --blue-025: #f5faff;
+  --blue-050: #ecf6fe;
+  --blue-100: #d8ecfd;
+  --blue-200: #81c2f8;
+  --blue-300: #4ca7f6;
+  --blue-500: #2494f4;
+  --blue-700: #0b7ada;
 
-  --ink-100: #646f90; /* secondary text */
-  --ink-200: #303545; /* primary text */
-	--ink-300: #282E3E;
-  --ink-400: #1A1D28;
-  --ink-500: #13141B;
+  --green-025: #f7fdf9;
+  --green-050: #e0f5e8;
+  --green-100: #baefcd;
+  --green-200: #71d094;
+  --green-300: #3fc06f;
+  --green-500: #349d5b;
+  --green-700: #2a7e49;
 
-  --indigo-100: #eff3fb;
-  --indigo-200: #cedaf3;
-  --indigo-300: #7b89c9;
-  --indigo-400: #4257b2;
-  --indigo-500: #3b4c9b;
+  --yellow-025: #fffcf5;
+  --yellow-050: #fef5e1;
+  --yellow-100: #fde8be;
+  --yellow-200: #fed582;
+  --yellow-300: #f1c160;
+  --yellow-500: #f0b030;
+  --yellow-700: #c88912;
 
-  --teal-100: #e7f9f9;
-  --teal-200: #cff3f3;
-  --teal-300: #77dddd;
-  --teal-400: #3ccfcf;
-  --teal-500: #28a7a7;
+  --red-025: #fef6f7;
+  --red-050: #fcedee;
+  --red-100: #fadbde;
+  --red-200: #f9aaaf;
+  --red-300: #ea6c76;
+  --red-500: #d7444c;
+  --red-700: #c32230;
 
-  --yellow-100: #fff9e3;
-  --yellow-200: #ffedab;
-  --yellow-300: #ffdc62;
-  --yellow-400: #ffcd1f;
-  --yellow-500: #997700;
+  --plum-025: #fff8ff;
+  --plum-050: #fceffc;
+  --plum-100: #f7def7;
+  --plum-200: #e2bee4;
+  --plum-300: #cf91d8;
+  --plum-500: #b062bc;
+  --plum-700: #9846a4;
 
-  --orange-100: #fff8f0;
-  --orange-200: #fce1c0;
-  --orange-300: #f5ab4c;
-  --orange-400: #f08700;
-  --orange-500: #965501;
-
-  --green-100: #f2fbf6;
-  --green-200: #c8ecdb;
-  --green-300: #65c999;
-  --green-400: #23b26d;
-  --green-500: #19804f;
-
-  --coral-100: #fff3f1;
-  --coral-200: #ffdcd6;
-  --coral-300: #ff9c8c;
-  --coral-400: #ff725b;
-  --coral-500: #c34632;
-
-
-  --table-header-color: var(--ink-100);
-  --primary-text-color: var(--ink-200);
-  --secondary-text-color: var(--ink-100);
-  --tertiary-text-color: var(--neutral-500);
-  --app-background-color: var(--neutral-100);
-  --main-border-color: var(--neutral-300);
-  --active-text-color: var(--teal-400);
-  --pagination-background: var(--neutral-200);
-  --color-examples-background: var(--neutral-200);
-  --logo-color: var(--indigo-400);
-  --do-example-color: var(--green-400);
-  --dont-example-color: var(--coral-400);
+  --orange-025: #fef9f6;
+  --orange-050: #fef3ec;
+  --orange-100: #fce1cf;
+  --orange-200: #f9bf98;
+  --orange-300: #f5a570;
+  --orange-500: #f28d49;
+  --orange-700: #e4782f;
 }
-
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --table-header-color: var(--ink-300);
-//     --primary-text-color: var(--neutral-400);
-//     --secondary-text-color: var(--ink-100);
-//     --tertiary-text-color: var(--ink-100);
-//     --app-background-color: var(--ink-500);
-//     --main-border-color: var(--ink-200);
-//     --active-text-color: var(--indigo-300);
-//     --pagination-background: var(--ink-400);
-//     --color-examples-background: var(--ink-400);
-//     --logo-color: var(--indigo-300);
-//     --do-example-color: var(--green-300);
-//     --dont-example-color: var(--coral-300);
-//   }
-// }
-
 
 /* Fonts  -------------------*/
 
@@ -98,18 +74,6 @@
   html {
     font-family: 'Inter var', sans-serif;
   }
-}
-
-@font-face {
-  font-family: "Messina Sans Regular";
-  src: url("../fonts/MessinaSansWeb-Regular.woff2") format("woff2"),
-       url("/fonts/MessinaSansWeb-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Messina Sans Bold";
-  src: url("../fonts/MessinaSansWeb-Bold.woff2") format("woff2"),
-       url("/fonts/MessinaSansWeb-Bold.woff") format("woff");
 }
 
 @font-face {
